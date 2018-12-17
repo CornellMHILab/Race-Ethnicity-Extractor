@@ -1,0 +1,5 @@
+\b(puerto\s{0,3}(\s|-|_)\s{0,3}rican|dominican|jamaican|haitian|cuban(\s{0,3}(\s|-|_)\s{0,3}american)?|mexican|(south|central|north)\s{0,3}(\s|-|_)\s{0,3}american|black|african(\s{0,3}(\s|_|-)\s{0,3}american)?|white|caucasian|anglo\s{0,3}(\s|-|_)\s{0,3}saxon|canadian|caucasoid|european|swedish|swiss|danish|dutch|scandinavian|irish|spanish|russian|german|polish|french|jewish|israeli?|egypt(ian)?|libyan?|morocc(o|an)|latin(o|a)|hispanic|indian|gujarati|bengali|tamil|telungu|malayalam|asian|chinese|mandarin|japanese|korean|malaysia(n)?|philip(ino|pine)|vietnamese|burmese|thai|laotian|cambodian|sri\s{0,3}(\s|-|_)\s{0,3}lankan|oriental|native\s{0,3}(\s|-|_)\s{0,3}(american|alaskan)|american\s{0,3}(\s|-|_)\s{0,3}indian|eskimo|alaskan?\s{0,3}(\s|-|_)\s{0,3}nati(ve|on)|arab(ian)?|african?|sudan|(ni|al)geria|ethiopia|kenya|ghana|uganda|cameroon|congo|zambia|pakistani?|bangladeshi?|afghan|hawaiian|pacific\s{0,3}(\s|-|_)\s{0,3}islander|polynesian|austronesian)\b
+\b(mixed|multi|bi)\s{0,3}(\s|-|_)\s{0,3}(race|racial)\b
+\bno(n|t)\s{0,3}(\s|-|_)\s{0,3}(hispanic|latin(a|o))\b
+\s{1,4}AA\s{1,4}
+\b((\s{1,4}aa\s{1,4})|black|african\s{0,4}american:?)\s{0,4}yes\b

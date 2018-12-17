@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><analysisEngineDeploymentDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>defaultLeoDeployDescriptor20181217.144804</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+    <deployment protocol="jms" provider="activemq">
+        <casPool numberOfCASes="10" initialFsHeapSize="2000000"/>
+        <service>
+            <inputQueue endpoint="CIREX" brokerURL="tcp://localhost:61616" prefetch="0"/>
+            <topDescriptor>
+                <import location="/nlp/uima/uima-as/leo/CIREX/config/desc/leoAggregate8337617716250160576.xml"/>
+            </topDescriptor>
+            <analysisEngine async="true">
+                <scaleout numberOfInstances="4"/>
+                <delegates>
+                    <analysisEngine key="ConceptRegex211205da1df1-dabd-4d8b-86bc-b41a28763bc2" async="false">
+                        <scaleout numberOfInstances="1"/>
+                        <asyncAggregateErrorConfiguration>
+                            <getMetadataErrors maxRetries="0" timeout="0" errorAction="terminate"/>
+                            <processCasErrors thresholdCount="0" thresholdWindow="0" thresholdAction="terminate"/>
+                            <collectionProcessCompleteErrors timeout="0" additionalErrorAction="terminate"/>
+                        </asyncAggregateErrorConfiguration>
+                    </analysisEngine>
+                    <analysisEngine key="ConceptWindowAnnotator2112f8dbe368-0b6d-4f8e-93a8-6f619e0cc0fe" async="false">
+                        <scaleout numberOfInstances="1"/>
+                        <asyncAggregateErrorConfiguration>
+                            <getMetadataErrors maxRetries="0" timeout="0" errorAction="terminate"/>
+                            <processCasErrors thresholdCount="0" thresholdWindow="0" thresholdAction="terminate"/>
+                            <collectionProcessCompleteErrors timeout="0" additionalErrorAction="terminate"/>
+                        </asyncAggregateErrorConfiguration>
+                    </analysisEngine>
+                    <analysisEngine key="ContextWindowAnnotator2112ee5f8438-9d93-4888-8e94-0bcb4427b8eb" async="false">
+                        <scaleout numberOfInstances="1"/>
+                        <asyncAggregateErrorConfiguration>
+                            <getMetadataErrors maxRetries="0" timeout="0" errorAction="terminate"/>
+                            <processCasErrors thresholdCount="0" thresholdWindow="0" thresholdAction="terminate"/>
+                            <collectionProcessCompleteErrors timeout="0" additionalErrorAction="terminate"/>
+                        </asyncAggregateErrorConfiguration>
+                    </analysisEngine>
+                    <analysisEngine key="MeasurementRegex211234519aed-0b26-4a2f-9133-cd76339e9107" async="false">
+                        <scaleout numberOfInstances="1"/>
+                        <asyncAggregateErrorConfiguration>
+                            <getMetadataErrors maxRetries="0" timeout="0" errorAction="terminate"/>
+                            <processCasErrors thresholdCount="0" thresholdWindow="0" thresholdAction="terminate"/>
+                            <collectionProcessCompleteErrors timeout="0" additionalErrorAction="terminate"/>
+                        </asyncAggregateErrorConfiguration>
+                    </analysisEngine>
+                    <analysisEngine key="ConceptMeasureFilter21122fe9da03-8ae8-41a6-b449-83314dcbfdc5" async="false">
+                        <scaleout numberOfInstances="1"/>
+                        <asyncAggregateErrorConfiguration>
+                            <getMetadataErrors maxRetries="0" timeout="0" errorAction="terminate"/>
+                            <processCasErrors thresholdCount="0" thresholdWindow="0" thresholdAction="terminate"/>
+                            <collectionProcessCompleteErrors timeout="0" additionalErrorAction="terminate"/>
+                        </asyncAggregateErrorConfiguration>
+                    </analysisEngine>
+                    <analysisEngine key="MeasurementValidatorAnnotator2112b36a6886-e7eb-4f85-9577-56b63b4d9334" async="false">
+                        <scaleout numberOfInstances="1"/>
+                        <asyncAggregateErrorConfiguration>
+                            <getMetadataErrors maxRetries="0" timeout="0" errorAction="terminate"/>
+                            <processCasErrors thresholdCount="0" thresholdWindow="0" thresholdAction="terminate"/>
+                            <collectionProcessCompleteErrors timeout="0" additionalErrorAction="terminate"/>
+                        </asyncAggregateErrorConfiguration>
+                    </analysisEngine>
+                    <analysisEngine key="ConceptToMeasureRelationAnnotator2112031721c3-5dfb-430a-ba37-4c8507fde139" async="false">
+                        <scaleout numberOfInstances="1"/>
+                        <asyncAggregateErrorConfiguration>
+                            <getMetadataErrors maxRetries="0" timeout="0" errorAction="terminate"/>
+                            <processCasErrors thresholdCount="0" thresholdWindow="0" thresholdAction="terminate"/>
+                            <collectionProcessCompleteErrors timeout="0" additionalErrorAction="terminate"/>
+                        </asyncAggregateErrorConfiguration>
+                    </analysisEngine>
+                    <analysisEngine key="FlattenRelationAE21126ad91f78-43a8-49e7-86cc-d9d90f18b17b" async="false">
+                        <scaleout numberOfInstances="1"/>
+                        <asyncAggregateErrorConfiguration>
+                            <getMetadataErrors maxRetries="0" timeout="0" errorAction="terminate"/>
+                            <processCasErrors thresholdCount="0" thresholdWindow="0" thresholdAction="terminate"/>
+                            <collectionProcessCompleteErrors timeout="0" additionalErrorAction="terminate"/>
+                        </asyncAggregateErrorConfiguration>
+                    </analysisEngine>
+                    <analysisEngine key="ClassifyDocument211249cb06e3-dabd-4d29-896f-12917a995fa7" async="false">
+                        <scaleout numberOfInstances="1"/>
+                        <asyncAggregateErrorConfiguration>
+                            <getMetadataErrors maxRetries="0" timeout="0" errorAction="terminate"/>
+                            <processCasErrors thresholdCount="0" thresholdWindow="0" thresholdAction="terminate"/>
+                            <collectionProcessCompleteErrors timeout="0" additionalErrorAction="terminate"/>
+                        </asyncAggregateErrorConfiguration>
+                    </analysisEngine>
+                </delegates>
+                <asyncPrimitiveErrorConfiguration>
+                    <processCasErrors thresholdCount="0" thresholdWindow="0" thresholdAction="terminate"/>
+                    <collectionProcessCompleteErrors timeout="0" additionalErrorAction="terminate"/>
+                </asyncPrimitiveErrorConfiguration>
+            </analysisEngine>
+        </service>
+    </deployment>
+</analysisEngineDeploymentDescription>

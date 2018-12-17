@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+    <primitive>false</primitive>
+    <delegateAnalysisEngineSpecifiers>
+        <delegateAnalysisEngine key="ConceptRegex21124c90e368-d690-4927-abad-d1c3175a141a">
+            <import location="/nlp/uima/uima-as/leo/CIREX/config/desc/ConceptRegex21124c90e368-d690-4927-abad-d1c3175a141a8426859988451456898.xml"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="ConceptWindowAnnotator21122dae0bea-5686-4914-9f58-53bddaf437f0">
+            <import location="/nlp/uima/uima-as/leo/CIREX/config/desc/ConceptWindowAnnotator21122dae0bea-5686-4914-9f58-53bddaf437f04801946265511384736.xml"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="ContextWindowAnnotator21121c092c1d-73c8-43e6-b5a3-0145efb6e98d">
+            <import location="/nlp/uima/uima-as/leo/CIREX/config/desc/ContextWindowAnnotator21121c092c1d-73c8-43e6-b5a3-0145efb6e98d4857795387790514658.xml"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="MeasurementRegex21120a3bec4c-2160-4caa-ac34-3d99b16657e1">
+            <import location="/nlp/uima/uima-as/leo/CIREX/config/desc/MeasurementRegex21120a3bec4c-2160-4caa-ac34-3d99b16657e15359779196130262796.xml"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="ConceptMeasureFilter2112d555a36d-f9dc-4aaf-b471-925ed426a6e4">
+            <import location="/nlp/uima/uima-as/leo/CIREX/config/desc/ConceptMeasureFilter2112d555a36d-f9dc-4aaf-b471-925ed426a6e46859889524575426184.xml"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="MeasurementValidatorAnnotator21128aaca621-2362-4249-b1da-e4d027d73a69">
+            <import location="/nlp/uima/uima-as/leo/CIREX/config/desc/MeasurementValidatorAnnotator21128aaca621-2362-4249-b1da-e4d027d73a69562258044151214439.xml"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="ConceptToMeasureRelationAnnotator21124e495d4f-ac48-4cad-beee-f808aaffc562">
+            <import location="/nlp/uima/uima-as/leo/CIREX/config/desc/ConceptToMeasureRelationAnnotator21124e495d4f-ac48-4cad-beee-f808aaffc5625317483579376481905.xml"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="FlattenRelationAE2112799d4e66-4a50-4f0a-b2d7-280d5dcb0ad6">
+            <import location="/nlp/uima/uima-as/leo/CIREX/config/desc/FlattenRelationAE2112799d4e66-4a50-4f0a-b2d7-280d5dcb0ad66297823120537003781.xml"/>
+        </delegateAnalysisEngine>
+    </delegateAnalysisEngineSpecifiers>
+    <analysisEngineMetaData>
+        <name>leoAggregate</name>
+        <configurationParameters/>
+        <configurationParameterSettings/>
+        <flowConstraints>
+            <fixedFlow>
+                <node>ConceptRegex21124c90e368-d690-4927-abad-d1c3175a141a</node>
+                <node>ConceptWindowAnnotator21122dae0bea-5686-4914-9f58-53bddaf437f0</node>
+                <node>ContextWindowAnnotator21121c092c1d-73c8-43e6-b5a3-0145efb6e98d</node>
+                <node>MeasurementRegex21120a3bec4c-2160-4caa-ac34-3d99b16657e1</node>
+                <node>ConceptMeasureFilter2112d555a36d-f9dc-4aaf-b471-925ed426a6e4</node>
+                <node>MeasurementValidatorAnnotator21128aaca621-2362-4249-b1da-e4d027d73a69</node>
+                <node>ConceptToMeasureRelationAnnotator21124e495d4f-ac48-4cad-beee-f808aaffc562</node>
+                <node>FlattenRelationAE2112799d4e66-4a50-4f0a-b2d7-280d5dcb0ad6</node>
+            </fixedFlow>
+        </flowConstraints>
+        <capabilities/>
+        <operationalProperties>
+            <modifiesCas>true</modifiesCas>
+            <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+            <outputsNewCASes>false</outputsNewCASes>
+        </operationalProperties>
+    </analysisEngineMetaData>
+</analysisEngineDescription>

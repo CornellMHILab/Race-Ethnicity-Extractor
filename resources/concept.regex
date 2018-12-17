@@ -1,0 +1,13 @@
+\b(male|man|female|woman|boy|girl|lady|gentleman)\b
+\b(patient|(pt\.?\s))\b
+\b(infant|young|old|elder(ly)?|aged)\b
+\bEthnicity(/Race)?:?
+\bRace(/Ethnicity)?:?
+\bethnic\s{1,4}(background|origin|descent|ancestry)?:?
+\b(interpreter)\b
+\bdescent\b
+\borigin\b
+\bnationality\b
+\bidentity\b
+\bracial\b
+\byes\b
