@@ -1,4 +1,4 @@
-## CIREX - Extremely fast document processor
+## CIREX - NLP document processor for race and ethnicity
 
 CIREX (Clinical Information Race Ethnicity eXtractor) Pipeline is designed to find patient demographic data, specifically race and ethnicity in clinical text.
 
