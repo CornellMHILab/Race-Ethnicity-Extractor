@@ -4,13 +4,6 @@ import gov.va.vinci.ef.listeners.BasicDatabaseListener
 
 int batchSize = 1000
 
-String url = "jdbc:sqlserver://vits-archsqlp03.a.wcmc-ad.net:1433;databasename=DM_NLP;integratedSecurity=false"
-String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
-String dbUser = "usr_dm_nlp"
-String dbPwd = "us3r_83_Nlp"
-String dbsName = "DM_NLP"
-String tableName = "dbo.PDEX_TEMP_OUTPUT"
-
 // String url = "jdbc:sqlserver://<server_address>:1433;databasename=<database_name>;integratedSecurity=false"
 // String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
 // String dbUser = "<user>"
